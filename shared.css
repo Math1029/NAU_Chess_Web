@@ -1,0 +1,200 @@
+@font-face
+{
+    font-family: 'Noto Sans';
+    src:url(Noto_Sans.ttf);
+}
+
+@font-face
+{
+    font-family: 'Goldman';
+    src:url(Goldman-Bold.ttf);
+}
+
+body
+{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+.header
+{
+    background-color: #003466;
+    padding: 20px;
+}
+
+.items
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item-main
+{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.item-main a
+{
+    text-decoration: none;
+    color: #f1b300;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.item-main a:hover,
+.item-main a:active
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.item-club
+{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.item-club a
+{
+    text-decoration: none;
+    background-color: #1976D2;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.item-club a:hover,
+.item-club a:active
+{
+    text-decoration: none;
+    background-color: white;
+    color: #1976D2;
+}
+
+.item-discord
+{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.item-discord a
+{
+    text-decoration: none;
+    background-color: #7289DA;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.item-discord a:hover,
+.item-discord a:active
+{
+    text-decoration: none;
+    background-color: white;
+    color: #7289DA;
+}
+
+.item-instagram
+{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.item-instagram a
+{
+    text-decoration: none;
+    background-color: #833AB4;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.item-instagram a:hover,
+.item-instagram a:active
+{
+    text-decoration: none;
+    background-color: white;
+    color: #833AB4;
+}
+
+.title
+{
+    font-family: 'Goldman', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: #f1b300;
+    margin: 18px 0 10px 0;
+}
+
+h2
+{
+    font-size: 54px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.true-blue
+{
+    background-color: #003466;
+}
+
+.gold
+{
+    background-color: #f1b300;
+}
+
+.monsoon
+{
+    background-color: #c3b8b2;
+}
+
+.sunset
+{
+    background-color: #f68300;
+}
+
+.summer-shade
+{
+    background-color: #007a33;
+}
+
+.red-rock
+{
+    background-color: #cf4527;
+}
+
+.supai
+{
+    background-color: #00adb5;
+}
+
+.twilight
+{
+    background-color: #0066b2;
+}
+
+.footer
+{
+    background-color: #003466;
+    padding: 40px 20px;
+}
+
+.end-note
+{
+    font-size: 24px;
+    color: #f1b300;
+}

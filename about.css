@@ -1,0 +1,52 @@
+.container
+{
+    display: flex;
+    grid-template-columns: auto;
+}
+
+div
+{
+    margin: 0 15px;
+}
+
+.text
+{
+    font-size: 36px;
+}
+
+.officer-table
+{
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+
+.table-head-row
+{
+    background-color: #003466;
+}
+
+.table-head-text
+{
+    text-align: center;
+    font-size: 36px;
+    color: #f1b300;
+    padding: 15px;
+}
+
+.table-odd-row
+{
+    background-color: #c3b8b2;
+}
+
+.table-even-row
+{
+    background-color: white;
+}
+
+.table-cell-text
+{
+    text-align: center;
+    font-size: 36px;
+    padding: 15px;
+}
