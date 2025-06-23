@@ -1,13 +1,13 @@
 @font-face
 {
     font-family: 'Noto Sans';
-    src:url(Noto_Sans.ttf);
+    src:url(fonts/Noto_Sans.ttf);
 }
 
 @font-face
 {
     font-family: 'Goldman';
-    src:url(Goldman-Bold.ttf);
+    src:url(fonts/Goldman-Bold.ttf);
 }
 
 body

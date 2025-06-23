@@ -1,0 +1,42 @@
+.image
+{
+    display: block;
+    margin: 15px auto;
+    width: 50%;
+}
+
+.tournament-table
+{
+    border-collapse: collapse;
+    margin: 15px auto;
+    width: 90%;
+}
+
+.tournament-head-row
+{
+    background-color: #f1b300;
+}
+
+.tournament-head-cell
+{
+    font-size: 36px;
+    color: #003366;
+    padding: 15px;
+}
+
+.tournament-odd-row
+{
+    background-color: white;
+}
+
+.tournament-even-row
+{
+    background-color: #c3b8b2;
+}
+
+.tournament-main-cell
+{
+    font-size: 36px;
+    font-weight: normal;
+    padding: 15px;
+}
