@@ -21,12 +21,12 @@ div
     margin: 15px auto;
 }
 
-.table-head-row
+.officer-head-row
 {
     background-color: #003466;
 }
 
-.table-head-text
+.officer-head-cell
 {
     text-align: center;
     font-size: 36px;
@@ -34,17 +34,17 @@ div
     padding: 15px;
 }
 
-.table-odd-row
+.officer-odd-row
 {
     background-color: #c3b8b2;
 }
 
-.table-even-row
+.officer-even-row
 {
     background-color: white;
 }
 
-.table-cell-text
+.officer-main-cell
 {
     text-align: center;
     font-size: 36px;

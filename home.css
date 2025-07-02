@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'Noto Serif';
+    src:url(fonts/Noto_Serif.ttf);
+}
+
 .container
 {
     display: flex;
@@ -12,4 +18,39 @@ div
 .text
 {
     font-size: 36px;
+}
+
+.quote-image
+{
+    background-image: linear-gradient(rgba(0,0,0,.7) 0% 10%, 
+        transparent 40% 60%,
+        rgba(0,0,0,.7) 90% 100%),
+        url("images/Chess_Palma.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 600px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.quote-text
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+}
+
+.quote-origin
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
 }
