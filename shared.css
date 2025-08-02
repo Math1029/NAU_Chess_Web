@@ -1,161 +1,308 @@
 @font-face
 {
     font-family: 'Noto Sans';
-    src:url(fonts/Noto_Sans.ttf);
+    src: url(fonts/Noto_Sans.ttf);
 }
 
 @font-face
 {
-    font-family: 'Goldman';
-    src:url(fonts/Goldman-Bold.ttf);
+    font-family: 'Noto Serif';
+    src: url(fonts/Noto_Serif.ttf);
+}
+
+@font-face
+{
+    font-family: 'Goldman Bold';
+    src: url(fonts/Goldman-Bold.ttf);
 }
 
 body
 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans';
+    line-height: 1.5;
     margin: 0;
 }
 
-.header
+.backdrop
 {
-    width: 100%;
-    background-color: #003466;
-    padding: 20px;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 200;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
 }
 
-.items
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+}
+
+.toggle-button
+{
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button__bar
+{
+    width: 100%;
+    height: 0.2rem;
+    /* background-color: #f1b300; */
+    display: block;
+    margin: 0.6rem 0;
+}
+
+.desktop-nav
+{
+    display: none;
+}
+
+.desktop-nav__items
 {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.item-main
+.desktop-nav__item,
+.desktop-nav__item-club,
+.desktop-nav__item-discord,
+.desktop-nav__item-instagram
 {
     display: inline-block;
-    margin: 0 4px;
+    margin: 0.875rem 0.5rem;
 }
 
-.item-main a
+.desktop-nav__item a
 {
     text-decoration: none;
     color: #f1b300;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 8px 16px;
 }
 
-.item-main a:hover,
-.item-main a:active
+.desktop-nav__item a:hover,
+.desktop-nav__item a:active
 {
-    color: white;
     text-decoration: underline;
-}
-
-.item-club
-{
-    display: inline-block;
-    margin: 0 4px;
-}
-
-.item-club a
-{
-    text-decoration: none;
-    background-color: #1976D2;
     color: white;
-    font-size: 24px;
+}
+
+.desktop-nav__item-club a,
+.desktop-nav__item-discord a,
+.desktop-nav__item-instagram a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
-.item-club a:hover,
-.item-club a:active
+.desktop-nav__item-club a
 {
-    text-decoration: none;
+    background-color: #1972d2;
+}
+
+.desktop-nav__item-club a:hover,
+.desktop-nav__item-club a:active
+{
     background-color: white;
-    color: #1976D2;
+    color: #1972d2;
 }
 
-.item-discord
+.desktop-nav__item-discord a
 {
-    display: inline-block;
-    margin: 0 4px;
-}
-
-.item-discord a
-{
-    text-decoration: none;
     background-color: #7289DA;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 8px 16px;
-    border-radius: 8px;
 }
 
-.item-discord a:hover,
-.item-discord a:active
+.desktop-nav__item-discord a:hover,
+.desktop-nav__item-discord a:active
 {
-    text-decoration: none;
     background-color: white;
     color: #7289DA;
 }
 
-.item-instagram
+.desktop-nav__item-instagram a
 {
-    display: inline-block;
-    margin: 0 4px;
-}
-
-.item-instagram a
-{
-    text-decoration: none;
     background-color: #833AB4;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 8px 16px;
-    border-radius: 8px;
 }
 
-.item-instagram a:hover,
-.item-instagram a:active
+.desktop-nav__item-instagram a:hover,
+.desktop-nav__item-instagram a:active
 {
-    text-decoration: none;
     background-color: white;
     color: #833AB4;
 }
 
-.main
+.mobile-nav
+{
+    display: none;
+    position: fixed;
+    z-index: 201;
+    top: 0;
+    left: 0;
+    width: 80%;
+    min-width: 12rem;
+    height: 100vh;
+}
+
+.mobile-nav__items
+{
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav__item,
+.mobile-nav__item-club,
+.mobile-nav__item-discord,
+.mobile-nav__item-instagram
+{
+    margin: 2rem 0;
+}
+
+.mobile-nav__item a
+{
+    text-decoration: none;
+    color: #f1b300;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active
+{
+    text-decoration: underline;
+    color: white;
+}
+
+.mobile-nav__item-club a,
+.mobile-nav__item-discord a,
+.mobile-nav__item-instagram a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.mobile-nav__item-club a
+{
+    background-color: #1972d2;
+}
+
+.mobile-nav__item-club a:hover,
+.mobile-nav__item-club a:active
+{
+    background-color: white;
+    color: #1972d2;
+}
+
+.mobile-nav__item-discord a
+{
+    background-color: #7289DA;
+}
+
+.mobile-nav__item-discord a:hover,
+.mobile-nav__item-discord a:active
+{
+    background-color: white;
+    color: #7289DA;
+}
+
+.mobile-nav__item-instagram a
+{
+    background-color: #833AB4;
+}
+
+.mobile-nav__item-instagram a:hover,
+.mobile-nav__item-instagram a:active
+{
+    background-color: white;
+    color: #833AB4;
+}
+
+main
 {
     z-index: 0;
 }
 
 .title
 {
-    font-family: 'Goldman', sans-serif;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #003466;
+    font-family: 'Goldman Bold';
+    font-size: 3rem;
     color: #f1b300;
-    margin: 73px 0 10px 0;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
-h2
+.subtitle
 {
-    font-size: 54px;
-    text-align: center;
+    font-size: 2.5rem;
     color: white;
-    padding: 10px;
-    margin: 15px 0;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+footer
+{
+    margin-top: 1rem;
+    height: 10rem;
+    position: relative;
+    z-index: 99;
+}
+
+.footer-note
+{
+    font-size: 1.5rem;
+    color: #f1b300;
+    margin: 0;
+    width: 94%;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+
+@media (min-width: 50rem)
+{
+    header
+    {
+        padding: 0 1rem;
+    }
+
+    .desktop-nav
+    {
+        display: inline-block;
+        text-align: left;
+        width: calc(100% - 3.5rem);
+        vertical-align: middle;
+    }
+
+    .toggle-button
+    {
+        display: none;
+    }
 }
 
 .true-blue
@@ -198,15 +345,7 @@ h2
     background-color: #0066b2;
 }
 
-.footer
+.open
 {
-    background-color: #003466;
-    padding: 40px 20px;
-    z-index: 1;
-}
-
-.end-note
-{
-    font-size: 24px;
-    color: #f1b300;
+    display: block !important;
 }

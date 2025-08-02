@@ -1,42 +1,57 @@
-.image
+.meeting__image-module
+{
+    vertical-align: middle;
+    width: 100%;
+}
+
+.meeting__image
 {
     display: block;
-    margin: 15px auto;
-    width: 50%;
+    margin: auto;
+    width: 100%;
+    max-width: 40rem;
 }
 
-.tournament-table
+.events__table
 {
     border-collapse: collapse;
-    margin: 15px auto;
-    width: 90%;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 80rem;
 }
 
-.tournament-head-row
+.events__header-date,
+.events__header-name,
+.events__header-location
 {
-    background-color: #f1b300;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003466;
+    text-align: center;
+    padding: 1rem 0.5rem;
 }
 
-.tournament-head-cell
+.events__main-date,
+.events__main-name,
+.events__main-location
 {
-    font-size: 36px;
-    color: #003366;
-    padding: 15px;
-}
-
-.tournament-odd-row
-{
-    background-color: white;
-}
-
-.tournament-even-row
-{
-    background-color: #c3b8b2;
-}
-
-.tournament-main-cell
-{
-    font-size: 36px;
+    font-size: 1.5rem;
     font-weight: normal;
-    padding: 15px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.events__main-location,
+.events__header-location
+{
+    display: none;
+}
+
+@media (min-width: 50rem)
+{
+    .events__main-location,
+    .events__header-location
+    {
+        display: table-cell;
+    }
 }

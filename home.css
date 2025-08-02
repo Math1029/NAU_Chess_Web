@@ -1,56 +1,172 @@
-@font-face
+figure
 {
-    font-family: 'Noto Serif';
-    src:url(fonts/Noto_Serif.ttf);
+    margin: 0;
 }
 
-.container
+.club__image-module,
+.meeting__image-module
 {
-    display: flex;
-    grid-template-columns: auto;
+    vertical-align: middle;
+    width: 100%;
 }
 
-div
+.club__image,
+.meeting__image
 {
-    margin: 0 15px;
+    display: block;
+    margin: auto;
+}
+
+.club__image
+{
+    width: 50%;
+    max-width: 15rem;
+}
+
+.meeting__image
+{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.club__text-module,
+.meeting__text-module
+{
+    margin: 0 1rem;
+    vertical-align: middle;
 }
 
 .text
 {
-    font-size: 36px;
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
-.quote-image
+.quote-background
 {
-    background-image: linear-gradient(rgba(0,0,0,.7) 0% 10%, 
-        transparent 40% 60%,
-        rgba(0,0,0,.7) 90% 100%),
-        url("images/Chess_Palma.jpg");
+    width: 100%;
+    height: 40vh;
+    margin: 1rem auto;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url(images/Chess_Palma.jpg); */
+    background-image: linear-gradient(rgba(0,0,0,0.7) 0% 30%,
+    transparent 55% 65%,rgba(0,0,0,0.7) 90% 100%), 
+        url(images/Chess_Palma.jpg);
     background-size: cover;
     background-position: center;
-    width: 80%;
-    height: 600px;
-    margin: 15px auto;
     position: relative;
+}
+
+.quote-text,
+.quote-origin
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    position: absolute;
 }
 
 .quote-text
 {
-    font-family: 'Noto Serif', serif;
-    font-size: 36px;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 5%;
     width: 90%;
+    top: 5%;
+    left: 5%
 }
 
 .quote-origin
 {
-    font-family: 'Noto Serif', serif;
-    font-size: 36px;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 10%;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media (min-width: 40rem)
+{
+    .club__image-module,
+    .club__text-module
+    {
+        display: inline-block;
+    }
+
+    .club__image-module
+    {
+        margin-left: 1rem;
+        width: 15rem;
+    }
+
+    .club__image
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+    .club__text-module
+    {
+        width: calc(100% - 18.5rem);
+        text-align: left;
+    }
+
+    .quote-background
+    {
+        width: 90%;
+        background-image: linear-gradient(rgba(0,0,0,0.7) 0% 20%,
+        transparent 45% 55%,rgba(0,0,0,0.7) 80% 100%), 
+            url(images/Chess_Palma.jpg);
+    }
+}
+
+@media (min-width: 60rem)
+{
+    .club__image-module
+    {
+        width: 25%;
+        max-width: 20rem
+    }
+
+    .club__text-module
+    {
+        width: max(75% - 3.5rem, 100% - 23.5rem);
+    }
+
+    .meeting__image-module,
+    .meeting__text-module
+    {
+        display: inline-block;
+    }
+
+    .meeting__image-module
+    {
+        margin-right: 1rem;
+        width: 50%;
+        max-width: 40rem;
+    }
+
+    .meeting__image
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+    .meeting__text-module
+    {
+        width: max(50% - 3.5rem, 100% - 43.5rem);
+        text-align: right;
+    }
+
+    .quote-background
+    {
+        height: 40vh;
+        width: 80%;
+        background-image: linear-gradient(rgba(0,0,0,0.7) 0% 10%,
+        transparent 40% 60%,rgba(0,0,0,0.7) 90% 100%), 
+            url(images/Chess_Palma.jpg);
+    }
+}
+
+@media (min-width: 75rem)
+{
+    .quote-background
+    {
+        height: 50vh;
+    }
 }

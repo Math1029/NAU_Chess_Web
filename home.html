@@ -2,70 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/Chess_Club_Dark.png">
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="home.css">
     <title>NAU CHESS</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navigation">
-            <ul class="items">
-                <li class="item-main">
+    <div class="backdrop"></div>
+    <header class="true-blue">
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar gold"></span>
+                <span class="toggle-button__bar gold"></span>
+                <span class="toggle-button__bar gold"></span>
+            </button>
+        </div>
+        <nav class="desktop-nav">
+            <ul class="desktop-nav__items">
+                <li class="desktop-nav__item">
                     <a href="home.html">Home</a>
                 </li>
-                <li class="item-main">
+                <li class="desktop-nav__item">
                     <a href="events.html">Events</a>
                 </li>
-                <li class="item-main">
-                    <a href="about.html">About</a>
+                <li class="desktop-nav__item-club">
+                        <a href="https://nau.campuslabs.com/engage/organization/chessclubatnau">
+                            True Blue
+                        </a>
                 </li>
-                <li class="item-club">
-                    <a href="https://nau.campuslabs.com/engage/organization/chessclubatnau"
-                        target="_blank">
-                        True Blue Connects
-                    </a>
+                <li class="desktop-nav__item-discord">
+                        <a href="https://discord.gg/AdamE29Xvv">
+                            Discord
+                        </a>
                 </li>
-                <li class="item-discord">
-                    <a href="https://discord.gg/AdamE29Xvv" target="_blank">
-                        Discord
-                    </a>
-                </li>
-                <li class="item-instagram">
-                    <a href="https://www.instagram.com/nau_chess_club/" 
-                        target="_blank">
-                        Instagram
-                    </a>
+                <li class="desktop-nav__item-instagram">
+                        <a href="https://www.instagram.com/nau_chess_club/">
+                            Instagram
+                        </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <h1 class="title">CHESS CLUB @ NAU</h1>
-        <h2 class="true-blue">Description</h2>
-        <section class="container">
-            <div>
-                <img src="images/Chess_Club_Dark.png" alt="Chess Club Logo">
-            </div>
-            <div>
+    <nav class="mobile-nav true-blue">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="events.html">Events</a>
+            </li>
+            <li class="mobile-nav__item-club">
+                    <a href="https://nau.campuslabs.com/engage/organization/chessclubatnau">
+                        True Blue
+                    </a>
+            </li>
+            <li class="mobile-nav__item-discord">
+                    <a href="https://discord.gg/AdamE29Xvv">
+                        Discord
+                    </a>
+            </li>
+            <li class="mobile-nav__item-instagram">
+                    <a href="https://www.instagram.com/nau_chess_club/">
+                        Instagram
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="title true-blue">Chess Club @ NAU</h1>
+        <section class="club__container">
+            <figure class="club__image-module">
+                <img src="images/Chess_Club_Dark.png" alt="Meeting Location"
+                    class="club__image">
+            </figure>
+            <article class="club__text-module">
                 <p class="text">
-                    Chess Club @ NAU is dedicated to providing chess at
+                    Chess Club @ NAU is dedicated to providing chess here at
                     Northern Arizona University. It is open to everyone from all
-                    walks of life. There are no hidden fees or required
-                    memberships to join.
+                    walks of life and skill levels. There are no hidden fees or
+                    required memberships to join.
                 </p>
-            </div>
+                <p class="text">
+                    At our meetings, you'll have the chance to participate in
+                    casual matches, learn new strategies, and connect with
+                    others who share your interest in chess. Join us and be part
+                    of a community that celebrates the joy of chess in a
+                    friendly, relaxed atmosphere.
+                </p>
+            </article>
         </section>
 
-        <h2 class="gold">Club Meetings</h2>
-        <section class="container">
-            <div>
-                <img src="images/Location.jpg" alt="Meeting Location">
-            </div>
-                <div>
+        <h2 class="subtitle gold">Location</h2>
+        <section class="meeting__container">
+            <article class="meeting__text-module">
+                <p class="text">
+                    Our first meeting will occur on September 8th, 2025 at 
+                    5:30pm MST in the Frank College of Business room 115.
+                </p>
                 <p class="text">
                     Chess meetings are located at the Du Bois Center in Aspen B
-                    room. They start Mondays at 5:00pm.
+                    room. They start Mondays at 5:00pm MST.
                 </p>
                 <p class="text">
                     <a href="https://maps.app.goo.gl/ZCHykU6voHcssuuT9" 
@@ -73,16 +110,15 @@
                         306 E Pine Knoll Dr, Flagstaff, AZ 86011
                     </a>
                 </p>
-                <p class="text">
-                    Chess board and pieces are already provided. There is also
-                    free pizza.
-                </p>
-            </div>
+            </article>
+            <figure class="meeting__image-module">
+                <img src="images/duBois.jpg" alt="du Bois Center"
+                    class="meeting__image">
+            </figure>
         </section>
 
-        </section>
-        <h2 class="monsoon">Quote</h2>
-        <section class="quote-image">
+        <h2 class="subtitle true-blue">Quote</h2>
+        <section class="quote-background">
             <p class="quote-text">
                 The ability to play chess is the sign of a gentleman. The
                 ability to play chess well is the sign of a wasted life.
@@ -92,8 +128,9 @@
             </p>
         </section>
     </main>
-    <footer class="footer">
-        <p class="end-note">Proudly developed using a text editor</p>
+    <footer class="true-blue">
+        <p class="footer-note">Proudly developed using a text editor</p>
     </footer>
+    <script src="shared.js"></script>
 </body>
 </html>
