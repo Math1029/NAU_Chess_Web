@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/Chess_Club_Dark.png">
-    <link rel="stylesheet" href="shared.css">
+    <link rel="icon" href="../images/Chess_Club_Dark.png">
+    <link rel="stylesheet" href="../shared.css">
     <link rel="stylesheet" href="events.css">
     <title>NAU CHESS</title>
 </head>
@@ -21,7 +21,7 @@
         <nav class="desktop-nav">
             <ul class="desktop-nav__items">
                 <li class="desktop-nav__item">
-                    <a href="home.html">Home</a>
+                    <a href="../home.html">Home</a>
                 </li>
                 <li class="desktop-nav__item">
                     <a href="events.html">Events</a>
@@ -47,7 +47,7 @@
     <nav class="mobile-nav true-blue">
         <ul class="mobile-nav__items">
             <li class="mobile-nav__item">
-                <a href="home.html">Home</a>
+                <a href="../home.html">Home</a>
             </li>
             <li class="mobile-nav__item">
                 <a href="events.html">Events</a>
@@ -71,14 +71,36 @@
     </nav>
     <main>
         <h1 class="title true-blue">Upcoming Events</h1>
+
         <h2 class="subtitle red-rock">Chess Meetings</h2>
-        <section class="meeting__container">
-            <div class="meeting__image-module">
-                <img src="images/first_meeting.png" alt="Chess Meeting"
-                    class="meeting__image">
-            </div>
-        </section>
+        <div class="meeting__image-module">
+            <img src="../images/first_meeting.png" alt="Chess Meeting"
+                class="meeting__image">
+        </div>
+
         <h2 class="subtitle supai">Tournaments</h2>
+        <ul class="notes__list">
+            <li class="notes__item">
+                Many of these tournaments require a United States Chess
+                Federation membership to participate
+            </li>
+            <li class="notes__item">
+                You can register at 
+                <a href="https://new.uschess.org/join-us-chess">
+                    new.uschess.org/join-us-chess
+                </a>
+            </li>
+            <li class="notes__item">
+                Some of these tournaments are hosted by Northern Arizona Chess
+                Center
+            </li>
+            <li class="notes__item">
+                You can check their website at
+                <a href="https://www.nazchesscenter.org/">
+                    www.nazchesscenter.org
+                </a>
+            </li>
+        </ul>
         <table class="events__table">
             <tr class="events__header gold">
                 <th class="events__header-date">Date</th>
@@ -92,7 +114,9 @@
                         Fall Kickoff
                     </a>
                 </td>
-                <td class="events__main-location">Coconino High School</td>
+                <td class="events__main-location">
+                    Coconino High School
+                </td>
             </tr>
             <tr class="events__main monsoon">
                 <td class="events__main-date">September 11th, 2025</td>
@@ -118,24 +142,36 @@
             </tr>
             <tr class="events__main monsoon">
                 <td class="events__main-date">October 4th, 2025</td>
-                <td class="events__main-name">Puente Open</td>
-                <td class="events__main-location">Puente De Hozho</td>
+                <td class="events__main-name">
+                    Puente Open
+                </td>
+                <td class="events__main-location">
+                    Puente De Hozho Elementary School
+                </td>
             </tr>
             <tr class="events__main">
                 <td class="events__main-date">November 1st, 2025</td>
-                <td class="events__main-name">Killip Chess Klassic</td>
-                <td class="events__main-location">Killip Elementary</td>
+                <td class="events__main-name">
+                    Killip Chess Klassic
+                </td>
+                <td class="events__main-location">
+                    Killip Elementary School
+                </td>
             </tr>
             <tr class="events__main monsoon">
                 <td class="events__main-date">December 13th, 2025</td>
-                <td class="events__main-name">Kinsey Chess Tournament</td>
-                <td class="events__main-location">Kinsey Elementary</td>
+                <td class="events__main-name">
+                    Kinsey Chess Tournament
+                </td>
+                <td class="events__main-location">
+                    Kinsey Elementary School
+                </td>
             </tr>
         </table>
     </main>
     <footer class="true-blue">
         <p class="footer-note">Proudly developed using a text editor</p>
     </footer>
-    <script src="shared.js"></script>
+    <script src="../shared.js"></script>
 </body>
 </html>

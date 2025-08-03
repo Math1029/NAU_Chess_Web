@@ -3,6 +3,14 @@ figure
     margin: 0;
 }
 
+.club__container,
+.meeting__container
+{
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+}
+
 .club__image-module,
 .meeting__image-module
 {
@@ -38,19 +46,19 @@ figure
 
 .text
 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1rem 0;
 }
 
 .quote-background
 {
     width: 100%;
-    height: 40vh;
+    max-width: 90rem;
+    /* height: 40vh; */
+    height: 30rem;
     margin: 1rem auto;
-    /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-        url(images/Chess_Palma.jpg); */
-    background-image: linear-gradient(rgba(0,0,0,0.7) 0% 30%,
-    transparent 55% 65%,rgba(0,0,0,0.7) 90% 100%), 
+    background-image: linear-gradient(rgba(0,0,0,0.7) 0% 25%,
+    transparent 50% 60%,rgba(0,0,0,0.7) 90% 100%), 
         url(images/Chess_Palma.jpg);
     background-size: cover;
     background-position: center;
@@ -105,29 +113,20 @@ figure
         width: calc(100% - 18.5rem);
         text-align: left;
     }
+}
 
+@media (min-width: 45rem)
+{
     .quote-background
     {
-        width: 90%;
-        background-image: linear-gradient(rgba(0,0,0,0.7) 0% 20%,
-        transparent 45% 55%,rgba(0,0,0,0.7) 80% 100%), 
+        background-image: linear-gradient(rgba(0,0,0,0.7) 0% 10%,
+        transparent 40% 60%,rgba(0,0,0,0.7) 90% 100%), 
             url(images/Chess_Palma.jpg);
     }
 }
 
 @media (min-width: 60rem)
 {
-    .club__image-module
-    {
-        width: 25%;
-        max-width: 20rem
-    }
-
-    .club__text-module
-    {
-        width: max(75% - 3.5rem, 100% - 23.5rem);
-    }
-
     .meeting__image-module,
     .meeting__text-module
     {
@@ -137,8 +136,7 @@ figure
     .meeting__image-module
     {
         margin-right: 1rem;
-        width: 50%;
-        max-width: 40rem;
+        width: 30rem;
     }
 
     .meeting__image
@@ -149,17 +147,8 @@ figure
 
     .meeting__text-module
     {
-        width: max(50% - 3.5rem, 100% - 43.5rem);
+        width: calc(100% - 33.5rem);
         text-align: right;
-    }
-
-    .quote-background
-    {
-        height: 40vh;
-        width: 80%;
-        background-image: linear-gradient(rgba(0,0,0,0.7) 0% 10%,
-        transparent 40% 60%,rgba(0,0,0,0.7) 90% 100%), 
-            url(images/Chess_Palma.jpg);
     }
 }
 

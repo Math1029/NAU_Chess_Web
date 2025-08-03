@@ -12,33 +12,52 @@
     max-width: 40rem;
 }
 
+.notes__list
+{
+    display: none;
+    margin: auto;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.notes__item
+{
+    font-size: 1rem;
+}
+
 .events__table
 {
     border-collapse: collapse;
     margin: 1rem auto;
     width: 100%;
-    max-width: 80rem;
+    max-width: 100rem;
+}
+
+.events__header-date,
+.events__header-name,
+.events__header-location,
+.events__main-date,
+.events__main-name,
+.events__main-location
+{
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
 }
 
 .events__header-date,
 .events__header-name,
 .events__header-location
 {
-    font-size: 1.5rem;
     font-weight: bold;
     color: #003466;
-    text-align: center;
-    padding: 1rem 0.5rem;
 }
 
 .events__main-date,
 .events__main-name,
 .events__main-location
 {
-    font-size: 1.5rem;
     font-weight: normal;
-    text-align: center;
-    padding: 1rem 0.5rem;
 }
 
 .events__main-location,

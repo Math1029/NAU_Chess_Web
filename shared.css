@@ -83,15 +83,21 @@ header
 .desktop-nav__item-instagram
 {
     display: inline-block;
-    margin: 0.875rem 0.5rem;
+    margin: 1.1rem 0.5rem;
 }
 
-.desktop-nav__item a
+.desktop-nav__item a,
+.desktop-nav__item-club a,
+.desktop-nav__item-discord a,
+.desktop-nav__item-instagram a
 {
     text-decoration: none;
-    color: #f1b300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
+}
+.desktop-nav__item a
+{
+    color: #f1b300;
 }
 
 .desktop-nav__item a:hover,
@@ -106,9 +112,6 @@ header
 .desktop-nav__item-instagram a
 {
     color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
@@ -179,12 +182,19 @@ header
     margin: 2rem 0;
 }
 
-.mobile-nav__item a
+.mobile-nav__item a,
+.mobile-nav__item-club a,
+.mobile-nav__item-discord a,
+.mobile-nav__item-instagram a
 {
     text-decoration: none;
-    color: #f1b300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
+}
+
+.mobile-nav__item a
+{
+    color: #f1b300;
 }
 
 .mobile-nav__item a:hover,
@@ -199,9 +209,6 @@ header
 .mobile-nav__item-instagram a
 {
     color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
@@ -275,7 +282,7 @@ footer
 
 .footer-note
 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #f1b300;
     margin: 0;
     width: 94%;
@@ -343,6 +350,11 @@ footer
 .twilight
 {
     background-color: #0066b2;
+}
+
+.white
+{
+    background-color: white;
 }
 
 .open
