@@ -14,7 +14,7 @@
 
 .gathering__container
 {
-    width: 100%;
+    padding: 1rem;
 }
 
 .gathering__image-module,
@@ -23,7 +23,7 @@
     vertical-align: middle;
 }
 
-.gathering__image
+.gathering__image-first
 {
     display: block;
     width: 100%;
@@ -31,19 +31,15 @@
     margin: auto;
 }
 
-.gathering__title,
+.gathering__image-second
+{
+    display: none;
+}
+
 .gathering__text
 {
     text-align: center;
     margin: 0;
-}
-
-.gathering__title
-{
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem 0;
-    color: #013465;
 }
 
 .gathering__text
@@ -52,14 +48,8 @@
     color: #013220;
 }
 
-.gathering__text:last-child
-{
-    padding-bottom: 1rem;
-}
-
 .notes__list
 {
-    /* display: none; */
     margin: auto;
     width: auto;
     max-width: 50rem;
@@ -144,9 +134,15 @@
         width: 20rem;
     }
 
-    .gathering__image
+    .gathering__image-first
     {
         width: 100%;
         max-width: none;
+    }
+
+    .gathering__image-second
+    {
+        display: block;
+        width: 100%;
     }
 }
