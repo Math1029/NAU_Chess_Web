@@ -252,6 +252,7 @@ header
 main
 {
     z-index: 0;
+    min-height: calc(100vh - 11rem - 4rem);
 }
 
 .title
