@@ -1,19 +1,29 @@
 @font-face
 {
     font-family: 'Noto Sans';
-    src: url(fonts/Noto_Sans.ttf);
+    font-weight: normal;
+    src: url(fonts/NotoSans-Regular.woff2);
+}
+
+@font-face
+{
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    src: url(fonts/NotoSans-Bold.woff2);
 }
 
 @font-face
 {
     font-family: 'Noto Serif';
-    src: url(fonts/Noto_Serif.ttf);
+    font-weight: normal;
+    src: url(fonts/NotoSerif-Regular.woff2);
 }
 
 @font-face
 {
     font-family: 'Goldman Bold';
-    src: url(fonts/Goldman-Bold.ttf);
+    font-weight: bold;
+    src: url(fonts/Goldman-Bold.woff2);
 }
 
 body
@@ -60,7 +70,6 @@ header
 {
     width: 100%;
     height: 0.2rem;
-    /* background-color: #f1b300; */
     display: block;
     margin: 0.6rem 0;
 }
