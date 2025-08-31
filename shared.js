@@ -1,6 +1,6 @@
 var toggleButton = document.querySelector(".toggle-button")
 var backdrop = document.querySelector(".backdrop");
-var mobileNav = document.querySelector(".mobile-nav");
+var mobileNav = document.querySelector(".mobile-nav__background");
 
 function openMenu()
 {

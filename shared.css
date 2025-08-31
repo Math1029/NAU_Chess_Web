@@ -39,19 +39,22 @@ body
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 200;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
+    z-index: 200;
 }
 
 header
 {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1rem;
     z-index: 100;
 }
 
@@ -79,20 +82,12 @@ header
     display: none;
 }
 
-.desktop-nav__items
-{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 .desktop-nav__item,
 .desktop-nav__item-club,
 .desktop-nav__item-discord,
 .desktop-nav__item-instagram
 {
-    display: inline-block;
-    margin: 1.1rem 0.5rem;
+    margin: 0 0.5rem;
 }
 
 .desktop-nav__item a,
@@ -101,9 +96,10 @@ header
 .desktop-nav__item-instagram a
 {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2;
     font-weight: bold;
 }
+
 .desktop-nav__item a
 {
     color: #f1b300;
@@ -161,7 +157,7 @@ header
     color: #833AB4;
 }
 
-.mobile-nav
+.mobile-nav__background
 {
     display: none;
     position: fixed;
@@ -171,16 +167,17 @@ header
     width: 80%;
     min-width: 12rem;
     height: 100vh;
+    background-color: #003466;
 }
 
-.mobile-nav__items
+.mobile-nav
 {
-    width: 90%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
     list-style: none;
-    margin: 10% auto;
-    padding: 0;
-    text-align: center;
+
 }
 
 .mobile-nav__item,
@@ -188,7 +185,7 @@ header
 .mobile-nav__item-discord,
 .mobile-nav__item-instagram
 {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .mobile-nav__item a,
@@ -303,17 +300,14 @@ footer
 
 @media (min-width: 50rem)
 {
-    header
-    {
-        padding: 0 1rem;
-    }
-
     .desktop-nav
     {
-        display: inline-block;
-        text-align: left;
-        width: calc(100% - 3.5rem);
-        vertical-align: middle;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     .toggle-button

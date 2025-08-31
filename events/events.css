@@ -1,34 +1,16 @@
-.meeting__image-module
-{
-    vertical-align: middle;
-    width: 100%;
-}
-
-.meeting__image
-{
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 40rem;
-}
-
 .gathering__container
 {
     padding: 1rem;
-}
-
-.gathering__image-module,
-.gathering__text-module
-{
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .gathering__image-first
 {
-    display: block;
     width: 100%;
     max-width: 10rem;
-    margin: auto;
 }
 
 .gathering__image-second
@@ -101,34 +83,13 @@
     display: none;
 }
 
-@media (min-width: 50rem)
-{
-    .events__main-location,
-    .events__header-location
-    {
-        display: table-cell;
-    }
-}
-
 @media (min-width: 45rem)
 {
     .gathering__container
     {
-        text-align: center;
+        flex-direction: row;
     }
-
-    .gathering__image-module,
-    .gathering__text-module
-    {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .gathering__image-module
-    {
-        width: 10rem;
-    }
-
+    
     .gathering__text-module
     {
         width: 20rem;
@@ -136,13 +97,22 @@
 
     .gathering__image-first
     {
-        width: 100%;
+        width: 10rem;
         max-width: none;
     }
 
     .gathering__image-second
     {
-        display: block;
-        width: 100%;
+        display: inline-block;
+        width: 10rem;
+    }
+}
+
+@media (min-width: 50rem)
+{
+    .events__main-location,
+    .events__header-location
+    {
+        display: table-cell;
     }
 }

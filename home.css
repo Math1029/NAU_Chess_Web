@@ -6,48 +6,47 @@ figure
 .club__container,
 .meeting__container
 {
-    width: 100%;
     max-width: 120rem;
     margin: auto;
-}
-
-.club__image-module,
-.meeting__image-module
-{
-    vertical-align: middle;
-    width: 100%;
-}
-
-.club__image,
-.meeting__image
-{
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .club__image
 {
-    width: 50%;
+    width: 100%;
     max-width: 15rem;
+    margin-bottom: 1rem;
 }
 
 .meeting__image
 {
     width: 100%;
     max-width: 30rem;
+    margin-bottom: 1rem;
 }
 
 .club__text-module,
 .meeting__text-module
 {
     margin: 0 1rem;
-    vertical-align: middle;
 }
 
-.text
+.text 
 {
-    font-size: 1rem;
     margin: 1rem 0;
+}
+
+.text:first-of-type
+{
+    margin-top: 0;
+}
+
+.text:last-of-type
+{
+    margin-bottom: 0;
 }
 
 .quote-background
@@ -89,28 +88,17 @@ figure
 
 @media (min-width: 40rem)
 {
-    .club__image-module,
-    .club__text-module
+    .club__container
     {
-        display: inline-block;
-    }
-
-    .club__image-module
-    {
-        margin-left: 1rem;
-        width: 15rem;
+        flex-direction: row;
     }
 
     .club__image
     {
-        width: 100%;
+        width: 15rem;
         max-width: none;
-    }
-
-    .club__text-module
-    {
-        width: calc(100% - 18.5rem);
-        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 0;
     }
 }
 
@@ -126,27 +114,23 @@ figure
 
 @media (min-width: 60rem)
 {
-    .meeting__image-module,
-    .meeting__text-module
+    .meeting__container
     {
-        display: inline-block;
-    }
-
-    .meeting__image-module
-    {
-        margin-right: 1rem;
-        width: 30rem;
+        flex-direction: row;
+        justify-content: right;
     }
 
     .meeting__image
     {
-        width: 100%;
+        width: 30rem;
         max-width: none;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        order: 1;
     }
 
     .meeting__text-module
     {
-        width: calc(100% - 33.5rem);
         text-align: right;
     }
 }
