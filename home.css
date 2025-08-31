@@ -3,6 +3,25 @@ figure
     margin: 0;
 }
 
+.meeting__subtitle,
+.quote__subtitle
+{
+    font-size: 2.5rem;
+    color: var(--white);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.meeting__subtitle
+{
+    background-color: var(--gold);
+}
+
+.quote__subtitle
+{
+    background-color: var(--trueBlue);
+}
+
 .club__container,
 .meeting__container
 {
@@ -112,7 +131,7 @@ figure
     }
 }
 
-@media (min-width: 60rem)
+@media (min-width: 50rem)
 {
     .meeting__container
     {

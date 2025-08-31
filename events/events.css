@@ -1,3 +1,22 @@
+.gathering__subtitle,
+.events__subtitle
+{
+    font-size: 2.5rem;
+    color: var(--white);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.gathering__subtitle
+{
+    background-color: var(--redRock);
+}
+
+.events__subtitle
+{
+    background-color: var(--supai);
+}
+
 .gathering__container
 {
     padding: 1rem;
@@ -5,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--monsoon);
 }
 
 .gathering__image-first
@@ -27,7 +47,7 @@
 .gathering__text
 {
     font-size: 1rem;
-    color: #013220;
+    color: var(--darkGreen);
 }
 
 .notes__list
@@ -50,35 +70,41 @@
     max-width: 100rem;
 }
 
-.events__header-date,
-.events__header-name,
-.events__header-location,
-.events__main-date,
-.events__main-name,
-.events__main-location
+.event__even
+{
+    background-color: var(--monsoon);
+}
+
+.header-date,
+.header-name,
+.header-location,
+.main-date,
+.main-name,
+.main-location
 {
     font-size: 1rem;
     text-align: center;
     padding: 1rem 0.5rem;
 }
 
-.events__header-date,
-.events__header-name,
-.events__header-location
+.header-date,
+.header-name,
+.header-location
 {
     font-weight: bold;
-    color: #003466;
+    color: var(--trueBlue);
+    background-color: var(--gold);
 }
 
-.events__main-date,
-.events__main-name,
-.events__main-location
+.main-date,
+.main-name,
+.main-location
 {
     font-weight: normal;
 }
 
-.events__main-location,
-.events__header-location
+.main-location,
+.header-location
 {
     display: none;
 }
@@ -110,8 +136,8 @@
 
 @media (min-width: 50rem)
 {
-    .events__main-location,
-    .events__header-location
+    .main-location,
+    .header-location
     {
         display: table-cell;
     }

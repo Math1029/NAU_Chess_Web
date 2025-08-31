@@ -26,6 +26,23 @@
     src: url(fonts/Goldman-Bold.woff2);
 }
 
+:root
+{
+    --trueBlue: #003466;
+    --gold: #f1b300;
+    --monsoon: #c3b8b2;
+    --sunset: #f68300;
+    --summerShade: #007a33;
+    --redRock: #cf4527;
+    --supai: #00adb5;
+    --twilight: #0066b2;
+    --white: white;
+    --club: #1972d2;
+    --instagram: #833ab4;
+    --discord: #7289da;
+    --darkGreen: #013220;
+}
+
 body
 {
     font-family: 'Noto Sans';
@@ -56,6 +73,7 @@ header
     height: 4rem;
     padding: 0 1rem;
     z-index: 100;
+    background-color: var(--trueBlue);
 }
 
 .toggle-button
@@ -75,6 +93,7 @@ header
     height: 0.2rem;
     display: block;
     margin: 0.6rem 0;
+    background-color: var(--gold);
 }
 
 .desktop-nav
@@ -82,79 +101,9 @@ header
     display: none;
 }
 
-.desktop-nav__item,
-.desktop-nav__item-club,
-.desktop-nav__item-discord,
-.desktop-nav__item-instagram
+.desktop
 {
     margin: 0 0.5rem;
-}
-
-.desktop-nav__item a,
-.desktop-nav__item-club a,
-.desktop-nav__item-discord a,
-.desktop-nav__item-instagram a
-{
-    text-decoration: none;
-    font-size: 1.2;
-    font-weight: bold;
-}
-
-.desktop-nav__item a
-{
-    color: #f1b300;
-}
-
-.desktop-nav__item a:hover,
-.desktop-nav__item a:active
-{
-    text-decoration: underline;
-    color: white;
-}
-
-.desktop-nav__item-club a,
-.desktop-nav__item-discord a,
-.desktop-nav__item-instagram a
-{
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-}
-
-.desktop-nav__item-club a
-{
-    background-color: #1972d2;
-}
-
-.desktop-nav__item-club a:hover,
-.desktop-nav__item-club a:active
-{
-    background-color: white;
-    color: #1972d2;
-}
-
-.desktop-nav__item-discord a
-{
-    background-color: #7289DA;
-}
-
-.desktop-nav__item-discord a:hover,
-.desktop-nav__item-discord a:active
-{
-    background-color: white;
-    color: #7289DA;
-}
-
-.desktop-nav__item-instagram a
-{
-    background-color: #833AB4;
-}
-
-.desktop-nav__item-instagram a:hover,
-.desktop-nav__item-instagram a:active
-{
-    background-color: white;
-    color: #833AB4;
 }
 
 .mobile-nav__background
@@ -167,7 +116,7 @@ header
     width: 80%;
     min-width: 12rem;
     height: 100vh;
-    background-color: #003466;
+    background-color: var(--trueBlue);
 }
 
 .mobile-nav
@@ -175,84 +124,79 @@ header
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style-type: none;
     list-style: none;
-
 }
 
-.mobile-nav__item,
-.mobile-nav__item-club,
-.mobile-nav__item-discord,
-.mobile-nav__item-instagram
+.mobile
 {
     margin: 1rem 0;
 }
 
-.mobile-nav__item a,
-.mobile-nav__item-club a,
-.mobile-nav__item-discord a,
-.mobile-nav__item-instagram a
+.nav__item a,
+.nav__item-club a,
+.nav__item-discord a,
+.nav__item-instagram a
 {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.mobile-nav__item a
+.nav__item a
 {
-    color: #f1b300;
+    color: var(--gold);
 }
 
-.mobile-nav__item a:hover,
-.mobile-nav__item a:active
+.nav__item a:hover,
+.nav__item a:active
 {
     text-decoration: underline;
-    color: white;
+    color: var(--white);
 }
 
-.mobile-nav__item-club a,
-.mobile-nav__item-discord a,
-.mobile-nav__item-instagram a
+.nav__item-club a,
+.nav__item-discord a,
+.nav__item-instagram a
 {
-    color: white;
+    color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
-.mobile-nav__item-club a
+.nav__item-club a
 {
-    background-color: #1972d2;
+    background-color: var(--club);
 }
 
-.mobile-nav__item-club a:hover,
-.mobile-nav__item-club a:active
+.nav__item-club a:hover,
+.nav__item-club a:active
 {
-    background-color: white;
-    color: #1972d2;
+    background-color: var(--white);
+    color: var(--club);
 }
 
-.mobile-nav__item-discord a
+.nav__item-discord a
 {
-    background-color: #7289DA;
+    background-color: var(--discord);
 }
 
-.mobile-nav__item-discord a:hover,
-.mobile-nav__item-discord a:active
+.nav__item-discord a:hover,
+.nav__item-discord a:active
 {
-    background-color: white;
-    color: #7289DA;
+    background-color: var(--white);
+    color: var(--club);
 }
 
-.mobile-nav__item-instagram a
+.nav__item-instagram a
 {
-    background-color: #833AB4;
+    background-color: var(--instagram);
 }
 
-.mobile-nav__item-instagram a:hover,
-.mobile-nav__item-instagram a:active
+.nav__item-instagram a:hover,
+.nav__item-instagram a:active
 {
-    background-color: white;
-    color: #833AB4;
+    background-color: var(--white);
+    color: var(--instagram);
 }
 
 main
@@ -265,7 +209,8 @@ main
 {
     font-family: 'Goldman Bold';
     font-size: 3rem;
-    color: #f1b300;
+    color: var(--gold);
+    background-color: var(--trueBlue);
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 1rem;
@@ -274,7 +219,7 @@ main
 .subtitle
 {
     font-size: 2.5rem;
-    color: white;
+    color: var(--white);
     text-align: center;
     margin: 1rem 0;
 }
@@ -285,12 +230,13 @@ footer
     height: 10rem;
     position: relative;
     z-index: 99;
+    background-color: var(--trueBlue);
 }
 
 .footer-note
 {
     font-size: 1rem;
-    color: #f1b300;
+    color: var(--gold);
     margin: 0;
     width: 94%;
     position: absolute;
@@ -314,51 +260,6 @@ footer
     {
         display: none;
     }
-}
-
-.true-blue
-{
-    background-color: #003466;
-}
-
-.gold
-{
-    background-color: #f1b300;
-}
-
-.monsoon
-{
-    background-color: #c3b8b2;
-}
-
-.sunset
-{
-    background-color: #f68300;
-}
-
-.summer-shade
-{
-    background-color: #007a33;
-}
-
-.red-rock
-{
-    background-color: #cf4527;
-}
-
-.supai
-{
-    background-color: #00adb5;
-}
-
-.twilight
-{
-    background-color: #0066b2;
-}
-
-.white
-{
-    background-color: white;
 }
 
 .open
